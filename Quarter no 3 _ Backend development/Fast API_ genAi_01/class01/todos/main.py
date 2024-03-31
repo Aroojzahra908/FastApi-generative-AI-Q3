@@ -9,11 +9,10 @@ students = [{
     "rollNo": 2342
 },
             {
-    "userName":"Naveed Sarwar",
+    "userName":"Arooj zahra",
     "rollNo": 9213
 }
             ]
-
 @app.get("/students")
 def getStudents():
     return students
