@@ -9,19 +9,20 @@ students = [{
     "rollNo": 2342
 },
             {
-    "userName":"Arooj zahra",
+    "userName":"Arooj zahra",   
     "rollNo": 9213
 }
             ]
-@app.get("/students")
+@app.get("/students")    # http://127.0.0.1:8080/students >> to access student data
 def getStudents():
     return students
 
+# dictionary of students data add one or more data to the dictionary
 @app.get("/addStudent")
 def addStudent(userName:str, rollNo:str):
     global students
     students.append({"userName":userName, "rollNo":rollNo})
-    return students
+    return students             # http://127.0.0.1:8080/addStudent and give query params 
 
 @app.get("/")
 def helloWorld():
@@ -37,11 +38,15 @@ def getTodosPost():
     print("Get post method todos called")
     return "post gettodos called"
 
+# http://127.0.0.1:8080/getSingleTodo AND then give parameter name 
+#like username called key and its name (aroojzahra) call value
 @app.get("/getSingleTodo")
 def getSingleTodo(userName:str, rollNo:str):
     print("Get todo called",userName,rollNo )
-    return "getSingleTodo called sadf sd sdff"
+    return "get output without path variable called query parameters"
 
+
+# for update we set put
 @app.put("/updateTodo")
 def updateTodo():
     return "updateTodo called"

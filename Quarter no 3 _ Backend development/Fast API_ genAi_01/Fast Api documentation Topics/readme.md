@@ -1,8 +1,8 @@
-###### Create a Folder:
+#### Create a Folder:
 
 - First, create a folder where you'll organize your FastAPI project files. You can do this using your operating system's file manager or command-line interface.
 
-##Run Uvicorn:
+## Run Uvicorn:
 
 - Once you've created the folder and added your FastAPI application code (typically in a file named main.py), you can run the FastAPI application using the Uvicorn server.
 
@@ -35,4 +35,7 @@ With auto-reloading enabled, uvicorn will monitor your project files for changes
 2. pip install fastapi: This installs the FastAPI framework, which is a modern, fast web framework for building APIs with Python.
 3. pip install uvicorn: This installs Uvicorn, which is a lightning-fast ASGI server for running Python web applications.
 
-
+### Request body:
+- When you need to send data from a client (let's say, a browser) to your API, you send it as a request body.
+- To declare a request body, you use Pydantic models with all their power and  benefits                                    
+## pip install pydantic

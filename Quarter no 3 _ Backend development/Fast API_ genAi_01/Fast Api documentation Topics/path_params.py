@@ -1,4 +1,4 @@
-
+# path parameter or dynamic parameters 
 from fastapi import FastAPI
 import uvicorn
 
@@ -6,22 +6,24 @@ import uvicorn
 app = FastAPI()
 @app.get("/items")
 def getTodo():
-    return "here to show we write: http://127.0.0.1:8080/items , here open route items " 
+    return "here to show we write:  http://127.0.0.1:8000/items , here open route items " 
 
+# curly braces mn jo bhi likhyn ge wo path parameter hoga
 # route with variable
-@app.get("/items/{items_id}")
+
+@app.get("/items/{items_id}")  
 def getTodo(items_id):
-    return "here to show we write: http://127.0.0.1:8080/items/8 , here 8 is id we can write anything "
+    return "here to show we write:  http://127.0.0.1:8000/items/8 , here 8 is id we can write anything "
 
 # route with variable and datatype int not accept string 
 @app.get("/items2/{items2_id}")
 def getTodo(items2_id:int):
-    return {"here to show we write: http://127.0.0.1:8080/items/8 , here  is id we can write anything ": items2_id}
+    return {"here to show we write:  http://127.0.0.1:8000/items/8 , here  is id we can write anything ": items2_id}
 
 # route with variable and datatype string accept string and also int values but consider string in e.g "2"
 @app.get("/items3/{items3_id}")
 def getTodo(items3_id:str):
-    return {"here to show we write: http://127.0.0.1:8080/items/Ali , here  is id we can write anything ": items3_id}
+    return {"here to show we write:  http://127.0.0.1:8000/items/Ali , here  is id we can write anything ": items3_id}
 
 # declare a path parameter containing a path using a URL like:
 @app.get("/files/{file_path:path}")
