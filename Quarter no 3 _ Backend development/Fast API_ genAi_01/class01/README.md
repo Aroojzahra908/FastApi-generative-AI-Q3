@@ -15,5 +15,9 @@ Step2: set environment variable
 After adding this path to the PATH variable, PowerShell should recognize Poetry commands without specifying the full path to the script’s directory.
 Once you've done this, close and reopen your PowerShell session and try running poetry --version again. It should now recognize the command and display the version information.
 
+## Add dependencies:
+- poetry add sql model
+
+
 
 

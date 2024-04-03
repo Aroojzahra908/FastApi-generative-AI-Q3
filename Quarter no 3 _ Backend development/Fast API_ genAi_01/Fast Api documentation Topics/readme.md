@@ -39,3 +39,9 @@ With auto-reloading enabled, uvicorn will monitor your project files for changes
 - When you need to send data from a client (let's say, a browser) to your API, you send it as a request body.
 - To declare a request body, you use Pydantic models with all their power and  benefits                                    
 ## pip install pydantic
+
+
+
+home about 
+contact us 
+biography
