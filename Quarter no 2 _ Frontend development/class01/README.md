@@ -1,8 +1,10 @@
-### To make project folder: 
+## Next.js14 start:
+
+### step1:To make project folder: 
 - npx create-next-app@latest
 
-### To run project: 
+### step2:To run project: 
 - npm run dev 
 
-### pakage.json file change:
+### step3: pakage.json file change:
 - "autoprefixer": "10.0.1",  // remove hat from start 
