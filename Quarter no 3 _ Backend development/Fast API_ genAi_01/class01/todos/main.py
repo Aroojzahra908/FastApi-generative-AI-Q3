@@ -40,6 +40,7 @@ def getTodosPost():
 
  # http://127.0.0.1:8080/getSingleTodo AND then give parameter name 
  #like username called key and its name (aroojzahra) call value
+ 
 @app.get("/getSingleTodo")
 def getSingleTodo(userName:str, rollNo:str):
     print("Get todo called",userName,rollNo )

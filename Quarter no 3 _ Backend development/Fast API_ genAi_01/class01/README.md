@@ -18,6 +18,13 @@ Once you've done this, close and reopen your PowerShell session and try running 
 ## Add dependencies:
 - poetry add sql model
 
+## To run project:
+- poetry Run dev
+
+
+
+
+
 
 
 

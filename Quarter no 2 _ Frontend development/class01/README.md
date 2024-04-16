@@ -22,3 +22,20 @@ follow this syntax
 - create a folder in main structure called "Component"
 - and make component name file e.g (Card.tsx) and then call "<Card/>"
 
+## Dynamic routes and static routes 
+
+### Static Routes:
+
+- Purpose: Serve content that remains the same for all users.
+- Usage: Ideal for pages with fixed content or information that doesn't change frequently.
+- Benefit: Pre-rendered at build time for efficiency and SEO optimization.
+- syntax: Create a file in the pages directory with the desired route structure (e.g., about.js for /about).
+
+### Dynamic Routes:
+
+- Purpose: Generate pages with URLs dependent on external data or user input.
+- Usage: Suitable for creating pages with variable content or generating pages dynamically based on parameters in the URL.
+- Benefit: Enables building dynamic web applications with personalized content and flexible routing
+- syntax: Use square brackets [] in the file name to indicate dynamic segments in the URL (e.g., [slug].js for /blog/[slug]).
+- Create the file inside a directory named after the dynamic route (e.g., blog/[slug].js).
+- Each file in the dynamic route directory represents a unique page for different dynamic values.

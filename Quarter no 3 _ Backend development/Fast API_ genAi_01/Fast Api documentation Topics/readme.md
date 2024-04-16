@@ -35,6 +35,12 @@ With auto-reloading enabled, uvicorn will monitor your project files for changes
 2. pip install fastapi: This installs the FastAPI framework, which is a modern, fast web framework for building APIs with Python.
 3. pip install uvicorn: This installs Uvicorn, which is a lightning-fast ASGI server for running Python web applications.
 
+- get: backend se frontend e.g click button show data 
+
+- post: student form fill --- frontend se backend 
+
+- put: for update 
+
 ### Request body:
 - When you need to send data from a client (let's say, a browser) to your API, you send it as a request body.
 - To declare a request body, you use Pydantic models with all their power and  benefits                                    
@@ -42,6 +48,3 @@ With auto-reloading enabled, uvicorn will monitor your project files for changes
 
 
 
-home about 
-contact us 
-biography

@@ -17,7 +17,7 @@ app = FastAPI()
 
 
 @app.post("/items")
-def read_items(item:item):                                    # http://127.0.0.1:8000/items >>> and body mein json data jayega.
+def read_items(item:item):                                    # http://127.0.0.1:8000/items >>> and body mein json data jayega>> or json doc se aye ga .
 # store data in database for store this schema 
     return item.name
 
